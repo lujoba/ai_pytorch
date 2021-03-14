@@ -5,7 +5,7 @@ A library collection of PyTorch wrappers for IA training and deploy.
 ## Dependencies
 
 - [numpy](https://numpy.org/): The fundamental package for scientific computing with Python.
-- [pillow](https://pypi.org/project/Pillow/): Image processing library;
+- [pillow](https://pypi.org/project/Pillow/): Image processing library, the default of PyTorch;
 - [pytorch](https://pytorch.org/): Deep Learning framework of choice.
 
 ## Scripts
