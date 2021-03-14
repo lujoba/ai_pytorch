@@ -21,7 +21,7 @@ A library collection of PyTorch wrappers for IA training and deploy.
     ```
 3. Use as CLI, as the example below, or call the class in your project:
     ```
-   pipenv training_siames.py -data data_path
+   pipenv run training_siames.py -data data_path
     ```
 4. Cite me;
 5. Have fun.
