@@ -1,4 +1,4 @@
-from helper_functions import HelperFunctions
+from ai_pytorch.utils.helper_functions import HelperFunctions
 import time
 import copy
 import torch

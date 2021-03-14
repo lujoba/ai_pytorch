@@ -20,14 +20,14 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='')
     parser.add_argument('input_dir', help='Input directory of images ()')
-    parser.add_argument('output_image', help='Output image name')
+    parser.add_argument('output_model', help='Output the model')
     parser.add_argument('--method', help='Stacking method ORB (faster) or ECC (more precise)')
     parser.add_argument('--show', help='Show result image', action='store_true')
     args = parser.parse_args()
 
-    image_folder = args.input_dir
-    if not os.path.exists(image_folder):
-        print("ERROR {} not found!".format(image_folder))
+    data_dir = args.input_dir
+    if not os.path.exists(data_dir):
+        print("ERROR {} not found!".format(data_dir))
         exit()
 
     data_transforms = {

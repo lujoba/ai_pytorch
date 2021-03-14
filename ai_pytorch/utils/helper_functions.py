@@ -1,4 +1,4 @@
-from unnormalize import UnNormalize
+from ai_pytorch.utils.unnormalize import UnNormalize
 import matplotlib.pyplot as plt
 import numpy as np
 
