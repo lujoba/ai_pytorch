@@ -1,4 +1,4 @@
-from ai_pytorch.utils.helper_functions import HelperFunctions
+# from ai_pytorch.utils.helper_functions import HelperFunctions
 import time
 import copy
 import torch
@@ -26,7 +26,6 @@ class ModelTraining(object):
 
     def __call__(self, dataloaders):
         since = time.time()
-
         best_model_wts = copy.deepcopy(self.model.state_dict())
         best_loss = float('inf')
         counter = []
@@ -42,9 +41,6 @@ class ModelTraining(object):
                     self.model.train()  # Set model to training mode
                 else:
                     self.model.eval()  # Set model to evaluate mode
-
-                # running_loss = 0.0
-                # running_corrects = 0
 
                 # Iterate over data.
                 for i, data in enumerate(dataloaders[phase], 0):
@@ -82,6 +78,6 @@ class ModelTraining(object):
 
         # load best model weights
         self.model.load_state_dict(best_model_wts)
-        HelperFunctions.show_plot(counter, loss_history)
+        # HelperFunctions.show_plot(counter, loss_history)
 
         return self.model
