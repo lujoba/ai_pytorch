@@ -106,20 +106,22 @@ if __name__ == '__main__':
     model_tuned = train_model(
         dataloaders
     )
+    
+    torch.save(model_tuned, 'model.ptc')
 
-    dataiter = iter(dataloaders['testing'])
-    x0, _, _ = next(dataiter)
-
-    for i in range(10):
-        _, x1, label2 = next(dataiter)
-        concatenated = torch.cat((x0, x1), 0)
-
-        output1, output2 = model_tuned(
-            Variable(x0).to(device),
-            Variable(x1).to(device)
-        )
-        euclidean_distance = F.pairwise_distance(output1, output2)
-        HelperFunctions.imshow(
-            torchvision.utils.make_grid(concatenated),
-            'Dissimilarity: {:.2f}'.format(euclidean_distance.item())
-        )
+    # dataiter = iter(dataloaders['testing'])
+    # x0, _, _ = next(dataiter)
+    #
+    # for i in range(10):
+    #     _, x1, label2 = next(dataiter)
+    #     concatenated = torch.cat((x0, x1), 0)
+    #
+    #     output1, output2 = model_tuned(
+    #         Variable(x0).to(device),
+    #         Variable(x1).to(device)
+    #     )
+    #     euclidean_distance = F.pairwise_distance(output1, output2)
+    #     HelperFunctions.imshow(
+    #         torchvision.utils.make_grid(concatenated),
+    #         'Dissimilarity: {:.2f}'.format(euclidean_distance.item())
+    #     )
