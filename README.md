@@ -6,7 +6,8 @@ A library collection of PyTorch wrappers for IA training and deploy.
 
 - [numpy](https://numpy.org/): The fundamental package for scientific computing with Python.
 - [pillow](https://pypi.org/project/Pillow/): Image processing library, the default of PyTorch;
-- [pytorch](https://pytorch.org/): Deep Learning framework of choice.
+- [pytorch](https://pytorch.org/): Deep Learning framework of choice;
+- [onnx](https://onnx.ai/): Open Neural Network Exchange.
 
 ## Scripts
 
@@ -25,3 +26,8 @@ A library collection of PyTorch wrappers for IA training and deploy.
     ```
 4. Cite me;
 5. Have fun.
+
+## To Do
+
+- Deployement script
+- 
