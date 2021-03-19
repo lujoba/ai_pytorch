@@ -30,4 +30,4 @@ A library collection of PyTorch wrappers for IA training and deploy.
 ## To Do
 
 - Deployement script
-- 
+- GUI
