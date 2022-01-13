@@ -7,7 +7,7 @@ name = "pypi"
 torch = "*"
 torchvision = "*"
 torchaudio = "*"
-pillow = "*"
+pillow = ">=9.0.0"
 numpy = "*"
 matplotlib = "*"
 
